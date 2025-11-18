@@ -14,8 +14,8 @@ Find the temperature control devices with
 ```
 find /sys/devices -type f -name "temp*_input"
 ```
-```
 in my case:
+```
 /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp6_input
 /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp3_input
 /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp7_input
