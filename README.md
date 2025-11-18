@@ -41,7 +41,7 @@ for example:
   - hwmon: /sys/devices/platform/thinkpad_hwmon/hwmon7
     indices: [3, 6, 7]
 ```
-*Throgh some trial and error for my laptop the other indicies would keep chaning but 3, 6 and 7 were constant.
+*Through trial and error, I was able to figure out which indices were constant.
 
 Full example:
 ```
@@ -62,15 +62,15 @@ levels:
   - [7, 65, 74]
   - [127, 70, 32767]
 ```
-Add them to /etc/thinkfan.conf, including (level, min_temperature, max_temperature):
+Add this to /etc/thinkfan.conf, including (level, min_temperature, max_temperature):
 
 # 3. Enabling the fan control
 ```
 echo "options thinkpad_acpi fan_control=1" > /etc/modprobe.d/thinkfan.conf
 modprobe thinkpad_acpi
 ```
-    You can check with lsmod if thinkfan_acpi is running
-    To reload a module you need to remove it with sudo modprobe -r <module>, but this is not always possible, so we might need a reboot here.
+You can check with lsmod if thinkfan_acpi is running
+To reload a module you need to remove it with sudo modprobe -r <module>, but this is not always possible, so we might need a reboot here.
 
 
 Use systemctl to run/start the service
