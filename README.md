@@ -1,4 +1,4 @@
-*The config file for my P16s fans
+*The config file for my P16s fans on Fedora
 
 # Thinkfan setup
 
