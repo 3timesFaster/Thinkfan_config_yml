@@ -34,7 +34,8 @@ in my case:
 /sys/devices/virtual/thermal/thermal_zone0/hwmon2/temp2_input
 ```
 
-# the tempX_input can be substituted with indices [1-7]
+***the tempX_input can be substituted with indices [1-7]
+
 for example:
 ```
   - hwmon: /sys/devices/platform/thinkpad_hwmon/hwmon7
